@@ -12,7 +12,7 @@
 
 #### Run `curl -X POST -F "file=@<file-path>" http://localhost:8000/upload-fcs/` command
 
-Replace **file-path** with the **.fcs** file path. Example: _C:/Users/ion/Desktop/RobotDreams/0001[WDF].fcs_
+Replace **<file-path>** with the **.fcs** file path. Example: _C:/Users/ion/Desktop/RobotDreams/0001[WDF].fcs_
 
 ### Step 2 - retrieve predictions
 
@@ -25,5 +25,5 @@ Sample _{"scatter_Side_Scatter_Signal_vs_Side_Fluorescence_Signal":0.50680190324
 
 #### Run `curl -OJ http://localhost:8000/plot/<plot-name>` to retreive an image, use one of the keys in the dictionary returned after running the previous command
 
-Replace **plot-name** with the respective key and add **.png**
+Replace **<plot-name>** with the respective key and add **.png**
 Example _curl -OJ http://localhost:8000/plot/scatter_Side_Scatter_Signal_vs_Side_Fluorescence_Signal.png_
