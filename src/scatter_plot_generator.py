@@ -28,6 +28,7 @@ class ScatterPlotGenerator:
         Generate an enhanced density-based scatterplot with exact dimensions.
         """
         save_path = Path(save_path)
+        print(save_path)
 
         # Set figure size in inches and DPI to achieve exact pixel dimensions
         dpi = 100
@@ -94,7 +95,7 @@ class ScatterPlotGenerator:
         for i, channel1 in enumerate(channels):
             for channel2 in channels[i + 1 :]:
                 plot_name = f"scatter_{channel1}_vs_{channel2}.png"
-                save_path = save_dir / plot_name
+                save_path = save_dir / plot_name.replace(" ", "_")
 
                 self.generate_density_scatterplot(
                     data[channel1],

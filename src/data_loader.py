@@ -1,8 +1,4 @@
 import fcsparser
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from itertools import combinations
 
 
 class FCSLoader:
