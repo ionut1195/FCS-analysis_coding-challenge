@@ -7,9 +7,6 @@ import os
 import sys
 from src.scatter_plot_generator import ScatterPlotGenerator
 
-project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-sys.path.insert(0, project_root)
-
 
 @pytest.fixture
 def scatter_generator():
